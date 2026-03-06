@@ -41,6 +41,9 @@ importers:
 
   packages/cdk:
     dependencies:
+      '@aws-cdk/aws-glue-alpha':
+        specifier: 2.232.1-alpha.0
+        version: 2.232.1-alpha.0(aws-cdk-lib@2.232.1(constructs@10.4.4))(constructs@10.4.4)
       aws-cdk-lib:
         specifier: 2.232.1
         version: 2.232.1(constructs@10.4.4)
@@ -77,6 +80,13 @@ packages:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0':
     resolution: {integrity: sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==}
+
+  '@aws-cdk/aws-glue-alpha@2.232.1-alpha.0':
+    resolution: {integrity: sha512-h+51eU6TGV1LlJgKNfTVW3s/m9Sv5HZ4f2t9/prkQzs6S2Buqe+b+SHEwsvsySev9YLgQ/wtx+jfzPQIMdw+wQ==}
+    engines: {node: '>= 18.0.0'}
+    peerDependencies:
+      aws-cdk-lib: ^2.232.1
+      constructs: ^10.0.0
 
   '@aws-cdk/cloud-assembly-schema@48.20.0':
     resolution: {integrity: sha512-+eeiav9LY4wbF/EFuCt/vfvi/Zoxo8bf94PW5clbMraChEliq83w4TbRVy0jB9jE0v1ooFTtIjSQkowSPkfISg==}
@@ -3241,6 +3251,11 @@ snapshots:
   '@aws-cdk/asset-awscli-v1@2.2.242': {}
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.1.0': {}
+
+  '@aws-cdk/aws-glue-alpha@2.232.1-alpha.0(aws-cdk-lib@2.232.1(constructs@10.4.4))(constructs@10.4.4)':
+    dependencies:
+      aws-cdk-lib: 2.232.1(constructs@10.4.4)
+      constructs: 10.4.4
 
   '@aws-cdk/cloud-assembly-schema@48.20.0': {}
 
